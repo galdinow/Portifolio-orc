@@ -1,22 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 body{
-    position: relative;
-    background-color: grey;
-    color: white;
+    background-color:#E2F1E7;
+    color: black;
+    display: flex;
+    flex-direction: column;
 }
+h1{
+    color: #243642;
+}
+/* Menu de navegacao */
 header{
     position: fixed;
     top: 0;
-    background-color: #DA0037;
+    background-color: #243642;
     width: 100%;
+    z-index: 1;
 }
 li{
     list-style: none;
 }
-a{
+.tab{
     color: white;
     text-decoration: none;
 }
@@ -24,7 +32,7 @@ a{
 .navmenu{
     width: 95%;
     margin: 0;
-    min-height: 40px;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,45 +45,105 @@ a{
     align-items: center;
     gap: 25px;
 }
-.secoes{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .meprin{
     font-size: 2rem;
     margin-right: 100px;
+    color: white;
+    text-decoration: none;
 }
 
-.home, .hard-skills,.projetos{
+.hard-skills,.projetos{
     height: 720px;
     margin-top: 40px;
 }
 .hard-skills,.projetos{
     margin-top: 0;
 }
-
-.home{
+.secoes{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 50px;
 }
-.pg{
-    margin-top: 50px;
-    margin-right: 100px;
-    width: 615px;
-}
-.eu{
-    margin: 50px;
-}
-.apresentacao{
+/* Introducao minha */
+#apresentacao{
     display: flex;
+    height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 .apresentacao__titulo{
+    margin-bottom: 20px;
     font-size: 30px;
-    margin-left: 50px;
-    width: 100px;
-    white-space: nowrap;
 }
-main{
-    box-sizing: border-box
+.apresentacao__paragrafo{
+    width: 700px;
+    font-size: 20px;
+}
+.foto{
+    margin-top: 50px;
+    width: 60vh;
+    z-index: 0;
+    border-radius: 10px;
+}
+/* Meus projetos */
+#projetos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+}
+.project-container{
+    height: 80vh;
+    width: 180vh;
+    background-color:  #387478;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    background-color: #629584;
+    align-items: center;
+    height: 468px;
+    width: 478px;
+    border-radius: 10px;
+}
+.gif{
+    margin: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+.project-description{
+    margin: 20px;
+}
+.imag{
+    margin-top: 75px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+/* Contato */
+
+#contato{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 60px;
+    
 }
