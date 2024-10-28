@@ -3,18 +3,79 @@
     padding: 0;
 }
 body{
-    box-sizing: border-box;
-    height: 100vh;
-    background-color: black;
+    position: relative;
+    background-color: grey;
     color: white;
 }
-
-h1{
+header{
+    position: fixed;
+    top: 0;
+    background-color: #DA0037;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
     color: white;
+    text-decoration: none;
 }
 
-img{
+.navmenu{
+    width: 95%;
+    margin: 0;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chunk{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.secoes{
+    display: flex;
+    flex-direction: column;
+}
 
-    height: 50vh;
-    width: 50vh;
+.meprin{
+    font-size: 2rem;
+    margin-right: 100px;
+}
+
+.home, .hard-skills,.projetos{
+    height: 720px;
+    margin-top: 40px;
+}
+.hard-skills,.projetos{
+    margin-top: 0;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+.pg{
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 615px;
+}
+.eu{
+    margin: 50px;
+}
+.apresentacao{
+    display: flex;
+}
+.apresentacao__titulo{
+    font-size: 30px;
+    margin-left: 50px;
+    width: 100px;
+    white-space: nowrap;
+}
+main{
+    box-sizing: border-box
 }
